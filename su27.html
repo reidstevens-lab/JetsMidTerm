@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Su‑27 Flanker</title>
+<link rel="stylesheet" href="f22.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Fighter Jets</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <div class="bg-text">SU‑27</div>
+
+    <img src="su27.jpg" class="jet-img" alt="Su‑27 Flanker">
+
+    <div class="specs">
+        <h2>THRUST</h2>
+        <p>55,000 lbf</p>
+
+        <h2>TOP SPEED</h2>
+        <p>Mach 2.35</p>
+
+        <h2>RANGE</h2>
+        <p>3,530 km</p>
+    </div>
+
+    <div class="model-name">SU‑27 FLANKER</div>
+
+    <div class="explore-card">
+        <img src="f35II.jpg" alt="F‑35 Front View">
+        <a href="f35.html">Next Jet →</a>
+    </div>
+
+</div>
+<!-- Popup -->
+<div id="jetInfoPopup" class="popup hidden">
+  <div class="popup-content">
+    <button id="closeJetPopup">Close</button>
+    <h2 id="jetPopupTitle"></h2>
+    <p id="jetPopupText"></p>
+  </div>
+</div>
+
+<script>
+const popup = document.getElementById("jetInfoPopup");
+const popupTitle = document.getElementById("jetPopupTitle");
+const popupText = document.getElementById("jetPopupText");
+const closePopup = document.getElementById("closeJetPopup");
+
+// When the jet image is clicked → show Su‑27 info
+document.querySelector(".jet-img").addEventListener("click", () => {
+  popupTitle.textContent = "Su‑27 Flanker";
+  popupText.textContent =
+    "The Su‑27 is a Soviet-designed air superiority fighter known for extreme agility, long-range interception, and forming the basis for many later Flanker variants.";
+  popup.classList.remove("hidden");
+});
+
+// Close popup
+closePopup.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
+</script>
+<style> .jet-img { transform: translateY(-50px); } </style>
+
+</body>
+</html>

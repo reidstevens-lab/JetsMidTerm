@@ -1,0 +1,154 @@
+
+:root{
+  --bg:#0a0a0a;
+  --panel:rgba(0,0,0,0.55);
+  --accent:#ff7b00;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:var(--bg);
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-top:64px;
+}
+
+
+nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  height:64px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  padding:0 40px;
+  background:rgba(17,17,17,0.5);
+  backdrop-filter:blur(6px);
+  z-index:1000;
+}
+
+nav .logo{
+  font-weight:800;
+  font-size:40px;
+  letter-spacing:1px;
+}
+
+nav .links{
+  position: absolute;
+  margin-left:auto;
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+nav .links a{
+  color:#fff;
+  text-decoration:none;
+  font-size:25px;
+  opacity:0.9;
+}
+
+nav .links a:hover{
+  opacity:1;
+}
+
+
+.hero{
+  min-height:calc(100vh - 64px);
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+
+.bg-video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+  opacity:0.35;
+}
+
+
+.hero > *:not(.bg-video){
+  position:relative;
+  z-index:5;
+}
+
+
+.bg-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Oswald',sans-serif;
+  font-size:220px;
+  font-weight:700;
+  color:rgba(255,255,255,0.04);
+  pointer-events:none;
+  user-select:none;
+  letter-spacing:-8px;
+}
+
+
+.home-jet-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  z-index:5;
+}
+
+.jet-card-home{
+  background:rgba(255,255,255,0.05);
+  padding:14px;
+  border-radius:12px;
+  text-align:center;
+  width:220px;
+  text-decoration:none;
+  color:white;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.jet-card-home img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.jet-card-home:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.jet-card-home h3{
+  margin-top:10px;
+  font-family:'Oswald',sans-serif;
+  font-size:20px;
+  letter-spacing:1px;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  scrollbar-width: none;
+}
+
+
+html, body {
+  overflow: hidden;
+}
+

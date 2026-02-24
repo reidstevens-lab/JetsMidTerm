@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<title>F‑22 Raptor </title>
+<link rel="stylesheet" href="f22.css"> <!-- reuse same CSS -->
+
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Fighter Jets</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <div class="bg-text">SU‑57</div>
+
+    
+    <img src="f22.jpg" class="jet-img" alt="F‑22 Raptor">
+
+    <div class="specs">
+        <h2>THRUST</h2>
+        <p>70,000 lbf</p>
+
+        <h2>TOP SPEED</h2>
+        <p>Mach 2.25</p>
+
+        <h2>RANGE</h2>
+        <p>2,200 km</p>
+    </div>
+
+    <div class="model-name"> F-22 RAPTOR</div>
+
+    <div class="explore-card">
+        <img src="su57.jpg" alt="SU‑57 Front View">
+        <a href="su57.html">Next Jet →</a>
+    </div>
+
+</div>
+
+<div id="jetInfoPopup" class="popup hidden">
+  <div class="popup-content">
+    <button id="closeJetPopup">Close</button>
+    <h2 id="jetPopupTitle"></h2>
+    <p id="jetPopupText"></p>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+<style> .jet-img { transform: translateY(-50px); } </style>
+<script>
+const popup = document.getElementById("jetInfoPopup");
+const popupTitle = document.getElementById("jetPopupTitle");
+const popupText = document.getElementById("jetPopupText");
+const closePopup = document.getElementById("closeJetPopup");
+
+
+document.querySelector(".jet-img").addEventListener("click", () => {
+  popupTitle.textContent = "F‑22 Raptor";
+  popupText.textContent = "The F‑22 Raptor is a fifth-generation, single-seat, twin-engine, all-weather stealth tactical fighter aircraft developed for the United States Air Force.";
+  popup.classList.remove("hidden");
+});
+
+
+closePopup.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
+</script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Su‑57 Felon</title>
+<link rel="stylesheet" href="f22.css"> 
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Fighter Jets</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <div class="bg-text">SU‑57</div>
+
+    <!-- Su‑57 image -->
+    <img src="su57.jpg" class="jet-img" alt="Su‑57 Felon">
+
+    <div class="specs">
+        <h2>THRUST</h2>
+        <p>66,000 lbf</p>
+
+        <h2>TOP SPEED</h2>
+        <p>Mach 2.0</p>
+
+        <h2>RANGE</h2>
+        <p>3,500 km</p>
+    </div>
+
+    <div class="model-name">SU‑57 FELON</div>
+
+    <div class="explore-card">
+        <img src="su27.jpg" alt="SU‑27 Front View">
+        <a href="su27.html">Next Jet →</a>
+    </div>
+
+</div> 
+<div id="jetInfoPopup" class="popup hidden">
+  <div class="popup-content">
+    <button id="closeJetPopup">Close</button>
+    <h2 id="jetPopupTitle"></h2>
+    <p id="jetPopupText"></p>
+  </div>
+</div>
+<script>
+const popup = document.getElementById("jetInfoPopup");
+const popupTitle = document.getElementById("jetPopupTitle");
+const popupText = document.getElementById("jetPopupText");
+const closePopup = document.getElementById("closeJetPopup");
+
+// When the jet image is clicked → show Su‑27 info
+document.querySelector(".jet-img").addEventListener("click", () => {
+  popupTitle.textContent = "Su‑27 Flanker";
+  popupText.textContent =
+    "The Su‑57 is Russia’s fifth‑generation stealth fighter featuring supermaneuverability and advanced radar systems.";
+  popup.classList.remove("hidden");
+});
+  
+// Close popup
+closePopup.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
+</script>
+
+</body>
+</html>
+<style> .jet-img { transform: translateY(-50px); } </style>
+
