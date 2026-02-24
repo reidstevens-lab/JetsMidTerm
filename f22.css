@@ -1,7 +1,6 @@
-
 :root{
   --bg:#0a0a0a;
-  --panel:rgba(0,0,0,0.55);
+  --panel:rgba(0,0,0,0.55);            /* :root                - theme variables (colors, accents) */
   --accent:#ff7b00;
 }
 html,body{height:100%;}
@@ -10,7 +9,7 @@ body{
   font-family:'Montserrat',sans-serif;
   background:var(--bg);
   color:#fff;
-  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing:antialiased;  /* body                 - base layout, fonts and site background */
   -moz-osx-font-smoothing:grayscale;
   padding-top:64px; 
 }
@@ -21,7 +20,7 @@ nav{
   top:0; left:0; right:0;
   height: 40px;
   display:flex;
-  align-items:center;
+  align-items:center;          /* nav                  - fixed top navigation bar */
   padding: 40px;
   background:rgba(17,17,17,0.5);
   backdrop-filter:blur(6px);
@@ -30,17 +29,17 @@ nav{
 nav .logo{
   font-weight:800;
   font-size:40px;
-  letter-spacing:1px;
+  letter-spacing:1px;    /* nav .logo            - site title / logo styling */
 }
 nav .links{
   margin-left:auto;
-  display:flex;
+  display:flex;                /* nav .links           - navigation links (pushed to right) */
   gap:30px;
   align-items:center;
 }
 nav .links a{
   color:#fff;
-  text-decoration:none;
+  text-decoration:none; /* nav .links           - navigation links (pushed to right) */
   font-size:25px;
   opacity:0.9;
 }
@@ -52,7 +51,7 @@ nav .links a:hover{opacity:1}
   padding-top:0; 
   box-sizing:border-box;
   position:relative; 
-  display:flex;
+  display:flex;  /* .hero                - main stage container for image and panels */
   align-items:center;
   justify-content:center;
   overflow:hidden;
@@ -64,8 +63,8 @@ nav .links a:hover{opacity:1}
   top:50%; left:50%; transform:translate(-50%,-50%);
   font-family:'Oswald',sans-serif;
   font-size:220px;
-  font-weight:700;
-  color:rgba(255,255,255,0.04);
+  font-weight:700;      
+  color:rgba(255,255,255,0.04);         /* .bg-text             - large decorative background text (low opacity) */
   pointer-events:none;
   user-select:none;
   letter-spacing:-8px;
@@ -78,7 +77,7 @@ nav .links a:hover{opacity:1}
   height:auto;
   z-index:3; 
   border-radius:8px;
-  filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6));
+  filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6));    /* .jet-img             - main jet image (centered in hero) */
   object-fit:contain;
   display:block;
   margin:0 auto;
@@ -93,7 +92,7 @@ nav .links a:hover{opacity:1}
   left:28px;
   top:50%;
   transform:translateY(-50%);
-  background:var(--panel);
+  background:var(--panel);     /* .specs               - left-side specs panel, absolute inside .hero */
   padding:22px;  
   border-radius:10px;
   width:325px;    
@@ -109,8 +108,8 @@ nav .links a:hover{opacity:1}
   bottom:72px;
   left:50%;
   transform:translateX(-50%);
-  font-family:'Oswald',sans-serif;
-  font-size:48px;
+  font-family:'Oswald',sans-serif;   /* .model-name          - centered model label near hero bottom */
+  font-size:48px; 
   letter-spacing:6px;
   z-index:4;
   opacity:0.95;
@@ -120,7 +119,7 @@ nav .links a:hover{opacity:1}
 .explore-card{
   position:absolute;
   right:28px;
-  bottom:60px;
+  bottom:60px;         /* .explore-card        - right-side card with CTA image/link */
   text-align:center;
   z-index:5;
 }
@@ -130,14 +129,14 @@ nav .links a:hover{opacity:1}
 
 #gallery{
   padding:40px 20px 80px;
-  max-width:1200px;
+  max-width:1200px;  
   margin:0 auto;
 }
 #gallery h2{font-family:'Oswald',sans-serif;text-align:center;margin:0 0 18px}
 
 .jet-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); /* #gallery / .jet-grid - responsive gallery container and grid layout */
   gap:18px;
 }
 
@@ -243,6 +242,9 @@ nav .links a:hover{opacity:1}
   font-size: 20px;
   letter-spacing: 1px;
 }
+
+
+
 
 
 
