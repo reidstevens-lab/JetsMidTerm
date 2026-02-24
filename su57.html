@@ -21,7 +21,7 @@
 
     <div class="bg-text">SU‑57</div>
 
-    <!-- Su‑57 image -->
+    
     <img src="su57.jpg" class="jet-img" alt="Su‑57 Felon">
 
     <div class="specs">
@@ -56,7 +56,7 @@ const popupTitle = document.getElementById("jetPopupTitle");
 const popupText = document.getElementById("jetPopupText");
 const closePopup = document.getElementById("closeJetPopup");
 
-// When the jet image is clicked → show Su‑27 info
+
 document.querySelector(".jet-img").addEventListener("click", () => {
   popupTitle.textContent = "Su‑27 Flanker";
   popupText.textContent =
@@ -64,7 +64,7 @@ document.querySelector(".jet-img").addEventListener("click", () => {
   popup.classList.remove("hidden");
 });
   
-// Close popup
+
 closePopup.addEventListener("click", () => {
   popup.classList.add("hidden");
 });

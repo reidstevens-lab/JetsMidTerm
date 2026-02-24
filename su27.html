@@ -41,7 +41,7 @@
     </div>
 
 </div>
-<!-- Popup -->
+
 <div id="jetInfoPopup" class="popup hidden">
   <div class="popup-content">
     <button id="closeJetPopup">Close</button>
@@ -56,7 +56,7 @@ const popupTitle = document.getElementById("jetPopupTitle");
 const popupText = document.getElementById("jetPopupText");
 const closePopup = document.getElementById("closeJetPopup");
 
-// When the jet image is clicked → show Su‑27 info
+
 document.querySelector(".jet-img").addEventListener("click", () => {
   popupTitle.textContent = "Su‑27 Flanker";
   popupText.textContent =
@@ -64,7 +64,7 @@ document.querySelector(".jet-img").addEventListener("click", () => {
   popup.classList.remove("hidden");
 });
 
-// Close popup
+
 closePopup.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
