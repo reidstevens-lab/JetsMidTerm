@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JAS‑39 Gripen</title>
+<title>J‑20 Mighty Dragon</title>
 <link rel="stylesheet" href="f22.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -13,37 +13,36 @@
     <div class="logo">Fighter Jets</div>
     <div class="links">
         <a href="index.html">Home</a>
-        
-    </div>
+     </div>
 </nav>
 
 <div class="hero">
 
-    <div class="bg-text">JAS‑39</div>
+    <div class="bg-text">J‑20</div>
 
-    <img src="jas39.jpg" class="jet-img" alt="JAS‑39 Gripen">
+    <img src="j20.jpg" class="jet-img" alt="J‑20 Mighty Dragon">
 
     <div class="specs">
         <h2>THRUST</h2>
-        <p>18,100 lbf</p>
+        <p>66,000 lbf</p>
 
         <h2>TOP SPEED</h2>
         <p>Mach 2.0</p>
 
         <h2>RANGE</h2>
-        <p>3,200 km</p>
+        <p>3,400 km</p>
     </div>
 
-    <div class="model-name">JAS‑39 GRIPEN</div>
+    <div class="model-name">J‑20 MIGHTY DRAGON</div>
 
     <div class="explore-card">
-        <img src="j20.jpg" alt="J‑20 Mighty Dragon">
-        <a href="j20.html">Next Jet →</a>
+        <img src="f35II.jpg" alt="F‑35 Front View">
+        <a href="f35.html">Next Jet →</a>
     </div>
 
 </div>
 
-
+<!-- Popup -->
 <div id="jetInfoPopup" class="popup hidden">
   <div class="popup-content">
     <button id="closeJetPopup">Close</button>
@@ -52,23 +51,22 @@
   </div>
 </div>
 
-
+<!-- Script -->
 <script>
 const popup = document.getElementById("jetInfoPopup");
 const popupTitle = document.getElementById("jetPopupTitle");
 const popupText = document.getElementById("jetPopupText");
 const closePopup = document.getElementById("closeJetPopup");
 
-
+// When the jet image is clicked → show J‑20 info
 document.querySelector(".jet-img").addEventListener("click", () => {
-  popupTitle.textContent = "JAS‑39 Gripen";
+  popupTitle.textContent = "J‑20 Mighty Dragon";
   popupText.textContent =
-    
-    "The JAS‑39 Gripen is a Swedish multirole fighter known for agility, low operating cost, advanced avionics, and exceptional reliability.";
+    "The J‑20 Mighty Dragon is China’s fifth‑generation stealth fighter designed for long‑range interception, advanced sensor fusion, and high‑end air superiority roles.";
   popup.classList.remove("hidden");
 });
 
-
+// Close popup
 closePopup.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
