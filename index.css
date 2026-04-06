@@ -21,7 +21,7 @@ nav{
   top:0; left:0; right:0;
   height:64px;
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
   padding:0 40px;
   background:rgba(17,17,17,0.5);
@@ -36,8 +36,7 @@ nav .logo{
 }
 
 nav .links{
-  position: absolute;
-  margin-left:auto;
+  
   display:flex;
   gap:30px;
   align-items:center;

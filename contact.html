@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Fighter Jets</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+ 
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Fighter Jets</div>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="compare.html">Compare</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="form-section">
+  <h1>CONTACT</h1>
+  <p class="subtitle">Got a favourite jet? Let us know.</p>
+
+  <div class="form-card">
+
+    <!-- Success message shown after submit -->
+    <div class="success-msg" id="successMsg">
+      <div class="checkmark">✈️</div>
+      <h2>SUBMITTED!</h2>
+      <p>Thanks for the feedback. We'll check it out.</p>
+    </div>
+
+    <!-- The form -->
+    <form id="contactForm">
+
+      <fieldset>
+        <legend>YOUR INFO</legend>
+
+        <div class="form-group">
+          <label for="userName">Name</label>
+          <input type="text" id="userName" name="userName" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="userEmail">Email</label>
+          <input type="email" id="userEmail" name="userEmail" placeholder="your@email.com" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>YOUR PICKS</legend>
+
+        <div class="form-group">
+          <label for="favJet">Favourite Jet</label>
+          <select id="favJet" name="favJet">
+            <option value="">-- Select a jet --</option>
+            <option value="f14">F-14 Tomcat</option>
+            <option value="f18">F/A-18 Super Hornet</option>
+            <option value="f22">F-22 Raptor</option>
+            <option value="f35">F-35 Lightning II</option>
+            <option value="su57">Su-57 Felon</option>
+            <option value="su27">Su-27 Flanker</option>
+            <option value="su35">Su-35 Super Flanker</option>
+            <option value="jas39">JAS-39 Gripen</option>
+            <option value="j20">J-20 Mighty Dragon</option>
+            <option value="eu">Eurofighter Typhoon</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Role (pick one)</label>
+          <div class="radio-group">
+            <label><input type="radio" name="role" value="air-superiority"> Air Superiority</label>
+            <label><input type="radio" name="role" value="strike"> Strike / Ground Attack</label>
+            <label><input type="radio" name="role" value="multirole"> Multirole</label>
+            <label><input type="radio" name="role" value="stealth"> Stealth</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Interested in (check all that apply)</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interest" value="speed"> Top Speed</label>
+            <label><input type="checkbox" name="interest" value="stealth"> Stealth Technology</label>
+            <label><input type="checkbox" name="interest" value="range"> Range & Endurance</label>
+            <label><input type="checkbox" name="interest" value="dogfight"> Dogfighting</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Rate this site (1–10)</label>
+          <input type="range" id="rating" name="rating" min="1" max="10" value="8"
+                 oninput="document.getElementById('ratingVal').textContent = this.value">
+          <div class="range-labels"><span>1</span><span>10</span></div>
+          <div class="rating-display" id="ratingVal">8</div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>COMMENTS</legend>
+        <div class="form-group">
+          <label for="comments">Anything to add?</label>
+          <textarea id="comments" name="comments" placeholder="Thoughts, suggestions, favourite jet facts..."></textarea>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">SUBMIT</button>
+
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  });
+</script>
+
+</body>
+</html>

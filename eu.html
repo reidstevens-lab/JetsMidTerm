@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JAS‑39 Gripen</title>
+<title>EuroFighter Typhoon</title>
 <link rel="stylesheet" href="f22.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -13,32 +13,31 @@
     <div class="logo">Fighter Jets</div>
     <div class="links">
         <a href="index.html">Home</a>
-        
-    </div>
+     </div>
 </nav>
 
 <div class="hero">
 
     
 
-    <img src="jas39.jpg" class="jet-img" alt="JAS‑39 Gripen">
+    <img src="ef.png" class="jet-img" alt="EuroFighter Typhoon">
 
     <div class="specs">
         <h2>THRUST</h2>
-        <p>18,100 lbf</p>
+        <p>51,000 lbf</p>
 
         <h2>TOP SPEED</h2>
-        <p>Mach 2.0</p>
+        <p>Mach 2.35</p>
 
         <h2>RANGE</h2>
-        <p>3,200 km</p>
+        <p>2,900 km</p>
     </div>
 
-    <div class="model-name">JAS‑39 GRIPEN</div>
+    <div class="model-name">EUROFIGHTER TYPHOON</div>
 
     <div class="explore-card">
-        <img src="j20.jpg" alt="J‑20 Mighty Dragon">
-        <a href="j20.html">Next Jet →</a>
+        <img src="f14.png" alt="F‑14 Front View">
+        <a href="f14.html">Next Jet →</a>
     </div>
 
 </div>
@@ -61,10 +60,9 @@ const closePopup = document.getElementById("closeJetPopup");
 
 
 document.querySelector(".jet-img").addEventListener("click", () => {
-  popupTitle.textContent = "JAS‑39 Gripen";
+  popupTitle.textContent = "EuroFighter Typhoon";
   popupText.textContent =
-    
-    "The JAS‑39 Gripen is a Swedish multirole fighter known for agility, low operating cost, advanced avionics, and exceptional reliability.";
+    "The J‑20 Mighty Dragon is China’s fifth‑generation stealth fighter designed for long‑range interception, advanced sensor fusion, and high‑end air superiority roles.";
   popup.classList.remove("hidden");
 });
 

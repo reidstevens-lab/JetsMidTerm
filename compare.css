@@ -1,0 +1,126 @@
+.compare-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 24px 80px;
+    }
+
+    .compare-section h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 48px;
+      letter-spacing: 4px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .compare-section p.subtitle {
+      text-align: center;
+      opacity: 0.6;
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    thead tr {
+      background: #ff7b00;
+      color: #fff;
+    }
+
+    thead th {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
+      letter-spacing: 1px;
+      padding: 16px 20px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.04);
+    }
+
+    tbody tr:hover {
+      background: rgba(255, 123, 0, 0.1);
+    }
+
+    tbody td {
+      padding: 14px 20px;
+      color: #fff;
+      vertical-align: middle;
+    }
+
+    tbody td:first-child {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    .flag {
+      font-size: 20px;
+      margin-right: 6px;
+    }
+
+    .gen-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .gen-5 {
+      background: rgba(255, 123, 0, 0.2);
+      border-color: #ff7b00;
+      color: #ff7b00;
+    }
+
+    .speed-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .speed-bar {
+      height: 6px;
+      background: #ff7b00;
+      border-radius: 4px;
+      min-width: 4px;
+    }
+
+    .jet-link {
+      color: #ff7b00;
+      text-decoration: none;
+      font-size: 13px;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    .jet-link:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .compare-section h1 { font-size: 32px; }
+      thead th, tbody td { padding: 10px 12px; font-size: 13px; }
+    }
