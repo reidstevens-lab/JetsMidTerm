@@ -166,3 +166,21 @@ html, body {
   .jet-card-home img{ height:110px; }
 }
 
+ /* Speed badge for fast jets */
+  .jet-card-home {
+    position: relative;
+  }
+
+  .speed-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff7b00;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    z-index: 2;
+  }
